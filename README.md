@@ -1,2 +1,2 @@
-# slide-template
-Template for [`remarkjs`](https://remarkjs.com/)-based slides deployed via GitHub Pages
+# latex-module-images
+Slides and materials for the lecture on images in LaTeX
