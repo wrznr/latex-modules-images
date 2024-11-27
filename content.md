@@ -59,7 +59,7 @@ count: false
 
 ---
 
-## Importing Images in LaTeX
+# Importing Images in LaTeX
 
 - Central package: `graphicx`
   ```latex
