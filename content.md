@@ -230,7 +230,7 @@ count: false
   - Diagrams
   - Geometric shapes
   - Flowcharts
-- R speaks TikZ (via `tikzDevice`)!
+- R speaks TikZ (via `TikZDevice`)!
 ```R
 tikz('tikz-example.tex',
 width = 3.25, height = 3.25)
