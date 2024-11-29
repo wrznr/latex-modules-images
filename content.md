@@ -72,6 +72,50 @@ count: false
 
 ---
 
+# Importing Images in LaTeX
+
+```latex
+\documentclass{standalone}
+\usepackage{graphicx}
+\begin{document}
+\includegraphics[width=\linewidth]{image.ext}
+\end{document}
+```
+
+- Insert your own `.png`, `.jpg`, or `.pdf` file.
+- Use **relative file paths** for portability.
+
+---
+
+# Image Quality: Pixel vs. Vector Graphics
+
+1. **Pixel-Based (Raster Graphics)**
+   - Resolution-dependent
+   - Formats: `.png`, `.jpg`
+
+2. **Vector-Based**
+   - Scalable without loss of quality
+   - Formats: `.pdf`, `.svg`
+
+| Type        | Example Format | Use Case          |
+|-------------|----------------|------------------------|
+| Pixel-Based | `.jpg`, `.png` | Photos, screenshots   |
+| Vector-Based| `.svg`, `.pdf` | Diagrams, illustrations|
+
+---
+
+# Example: Pixel vs. Vector Graphics
+
+![Low-Res Image](img/low-res-example.jpg)  
+*Low-resolution pixel image*
+
+---
+
+![Vector Image](img/vector-example.svg)  
+*Sharp and scalable vector image*
+
+---
+
 class: part-slide
 
 # Many thanks for your attention!
