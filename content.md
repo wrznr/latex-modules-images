@@ -6,7 +6,7 @@ layout: true
   <table>
     <tr>
       <td style="text-align:right">Sächsische Landesbibliothek – Staats- und Universitätsbibliothek</td>
-      <td>Date</td>
+      <td>28th November 2024</td>
       <td style="text-align:right"><a href="https://www.slub-dresden.de/">www.slub-dresden.de</a></td>
     </tr>
     <tr>
@@ -109,7 +109,8 @@ count: false
 ![Low-Res Image](img/low-res-example.jpg)  
 *Low-resolution pixel image*
 
----
+![High-Res Image](img/high-res-example.jpg)  
+*High-resolution pixel image*
 
 ![Vector Image](img/vector-example.svg)  
 *Sharp and scalable vector image*
