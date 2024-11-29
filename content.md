@@ -87,7 +87,14 @@ count: false
 
 ---
 
+class: part-slide
+count: false
+
 # Image Quality: Pixel vs. Vector Graphics
+
+---
+
+# Types of Images
 
 1. **Pixel-Based (Raster Graphics)**
    - Resolution-dependent
@@ -114,6 +121,106 @@ count: false
 
 ![Vector Image](img/vector-example.svg)  
 *Sharp and scalable vector image*
+
+---
+
+class: part-slide
+count: false
+
+# Customizing Image Placement
+
+---
+
+# Wrapping Images in a `figure`
+
+```latex
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{image.ext}
+    \caption{An example image.}
+    \label{fig:example}
+\end{figure}
+```
+
+- Standard way of image handling in scientific works
+- Use `[h]`, `[t]`, `[b]`, `[p]`, or `!` for placement.
+- Add captions and labels for cross-referencing.
+
+---
+
+# Wrapping figures text
+
+```latex
+\usepackage{wrapfig}
+\begin{wrapfigure}{r}{0.4\textwidth}
+\centering
+\includegraphics[width=\linewidth]{example-image}
+\caption{An example image.}
+\label{fig:wrap}
+\end{wrapfigure}
+\blindtext
+```
+
+- Creates visually appealing layouts.
+- Saves space in documents.
+- Commonly used in theses, reports, and articles.
+
+---
+
+# Combining Multiple Images
+
+```latex
+\usepackage{subcaption}
+\begin{figure}[h]
+    \begin{subfigure}[b]{0.45\linewidth}
+        \includegraphics[width=\linewidth]{image1}
+        \caption{Image 1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\linewidth}
+        \includegraphics[width=\linewidth]{image2}
+        \caption{Image 2}
+    \end{subfigure}
+\end{figure}
+```
+
+- Best-practice solution for combining multiple images in a single figure
+- Better than a table!
+- Automatic sub indexing, use separate labels.
+
+---
+
+class: part-slide
+count: false
+
+# Generating Images with TikZ
+
+---
+
+# What is TikZ?
+
+- A LaTeX library for drawing vector graphics.
+- Common applications:
+  - Diagrams
+  - Geometric shapes
+  - Flowcharts
+- ChatGPT speaks TikZ!
+
+---
+
+## Example: Drawing with TikZ
+
+```latex
+\usepackage{tikz}
+\begin{tikzpicture}
+    \draw[blue, thick] (0,0) circle (1cm);
+    \draw[red, thick] (0,0) -- (1,1);
+\end{tikzpicture}
+```
+
+*Generates this graphic:*
+
+![TikZ Example](img/vector-example.svg)
 
 ---
 
