@@ -48,7 +48,12 @@ count: false
 2. Image quality: pixel vs. vector graphics
 3. Customizing image placement
 4. Generating images with TikZ
-5. Advanced topics
+
+- Simplification of complex ideas
+- Increased reader engagement
+- Clearer support for arguments
+- Enhanced professional presentation
+- Improved comprehension and retention
 
 ---
 
@@ -148,6 +153,28 @@ count: false
 
 ---
 
+# Creating a List of Figures in LaTeX
+
+```latex
+\documentclass{report}
+   \usepackage{graphicx}
+   \begin{document}
+   \tableofcontents
+   \listoffigures
+   \chapter{Introduction}
+   \begin{figure}[h]
+       \centering
+       \includegraphics[width=\linewidth]{example-image}
+       \caption{An example figure.}
+   \end{figure}
+   \end{document}
+``` 
+
+- Overview of all figures in the document
+- Usually after table of contents
+
+---
+
 # Wrapping figures text
 
 ```latex
@@ -204,6 +231,13 @@ count: false
   - Diagrams
   - Geometric shapes
   - Flowcharts
+- R speaks TikZ (via `tikzDevice`)!
+```R
+tikz('tikz-example.tex',
+width = 3.25, height = 3.25)
+plot(1, 1, main = 'Hello \\TeX !')
+dev.off()
+```
 - ChatGPT speaks TikZ!
 
 ---
