@@ -69,7 +69,7 @@ count: false
 - Central package: `graphicx`
   ```latex
   \usepackage{graphicx}
-  \includegraphics[width=\linewidth]{example-image}
+  \includegraphics[width=\linewidth]{image.ext}
   ```
 
 - Common options:
@@ -164,7 +164,7 @@ count: false
    \chapter{Introduction}
    \begin{figure}[h]
        \centering
-       \includegraphics[width=\linewidth]{example-image}
+       \includegraphics[width=\linewidth]{image.ext}
        \caption{An example figure.}
    \end{figure}
    \end{document}
@@ -181,7 +181,7 @@ count: false
 \usepackage{wrapfig}
 \begin{wrapfigure}{r}{0.4\textwidth}
 \centering
-\includegraphics[width=\linewidth]{example-image}
+\includegraphics[width=\linewidth]{image.ext}
 \caption{An example image.}
 \label{fig:wrap}
 \end{wrapfigure}
@@ -200,12 +200,12 @@ count: false
 \usepackage{subcaption}
 \begin{figure}[h]
     \begin{subfigure}[b]{0.45\linewidth}
-        \includegraphics[width=\linewidth]{image1}
+        \includegraphics[width=\linewidth]{image1.ext}
         \caption{Image 1}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\linewidth}
-        \includegraphics[width=\linewidth]{image2}
+        \includegraphics[width=\linewidth]{image2.ext}
         \caption{Image 2}
     \end{subfigure}
 \end{figure}
