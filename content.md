@@ -212,7 +212,6 @@ count: false
 ```
 
 - Best-practice solution for combining multiple images in a single figure
-- Better than a table!
 - Automatic sub indexing, use separate labels.
 
 ---
