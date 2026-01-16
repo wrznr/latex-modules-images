@@ -6,7 +6,7 @@ layout: true
   <table>
     <tr>
       <td style="text-align:right">Sächsische Landesbibliothek – Staats- und Universitätsbibliothek</td>
-      <td>16th June 2025</td>
+      <td>16. Januar 2026</td>
       <td style="text-align:right"><a href="https://www.slub-dresden.de/">www.slub-dresden.de</a></td>
     </tr>
     <tr>
@@ -25,10 +25,10 @@ layout: true
       <td style="text-align:left">Referat 4.3</td>
     </tr>
     <tr>
-      <td style="font-size:8pt"><b>16th June 25</b></td>
+      <td style="font-size:8pt"><b>16. Januar 26</b></td>
     </tr>
     <tr>
-      <td style="font-size:8pt">Latex Module: Images</td>
+      <td style="font-size:8pt">LaTeX-Modul: Bilder</td>
     </tr>
   </table>
 </div>
@@ -38,122 +38,122 @@ layout: true
 class: title-slide
 count: false
 
-# Integrating and Generating Images in LaTeX
+# Bilder in LaTeX integrieren und generieren
 
 ---
 
-# Overview
+# Übersicht
 
-1. Basics of image integration
-2. Image quality: pixel vs. vector graphics
-3. Customizing image placement
-4. Generating images with TikZ
+1. Grundlagen der Bildeinbindung
+2. Bildqualität: Pixel- vs. Vektorgrafiken
+3. Anpassung der Bildplatzierung
+4. Bilder generieren mit TikZ
 
-- Simplification of complex ideas
-- Increased reader engagement
-- Clearer support for arguments
-- Enhanced professional presentation
-- Improved comprehension and retention
+- Vereinfachung komplexer Ideen
+- Erhöhtes Leserengagement
+- Klarere Unterstützung von Argumenten
+- Verbesserte professionelle Präsentation
+- Besseres Verständnis
 
 ---
 
 class: part-slide
 count: false
 
-# Basics of image integration
+# Grundlagen der Bildeinbindung
 
 ---
 
-# Importing Images in LaTeX
+# Importieren von Bildern in LaTeX
 
-- Central package: `graphicx`
+- Zentrales Paket: `graphicx`
   ```latex
   \usepackage{graphicx}
-  \includegraphics[width=\linewidth]{image.ext}
+  \includegraphics[width=\linewidth]{bild.ext}
   ```
 
-- Common options:
-  - `width`, `height`, `scale`, `angle`
+- Gängige Optionen:
+  - `width` (Breite), `height` (Höhe), `scale` (Skalierung), `angle` (Winkel)
 
 ---
 
-# Importing Images in LaTeX
+# Importieren von Bildern in LaTeX
 
 ```latex
 \documentclass{standalone}
 \usepackage{graphicx}
 \begin{document}
-\includegraphics[width=\linewidth]{image.ext}
+\includegraphics[width=\linewidth]{bild.ext}
 \end{document}
 ```
 
-- Insert your own `.png`, `.jpg`, or `.pdf` file.
-- Use **relative file paths** for portability.
+- Fügen Sie Ihre eigene `.png`-, `.jpg`- oder `.pdf`-Datei ein.
+- Verwenden Sie **relative Dateipfade** für Portabilität.
 
 ---
 
 class: part-slide
 count: false
 
-# Image Quality: Pixel vs. Vector Graphics
+# Bildqualität: Pixel- vs. Vektorgrafiken
 
 ---
 
-# Types of Images
+# Bildarten
 
-1. **Pixel-Based (Raster Graphics)**
-   - Resolution-dependent
-   - Formats: `.png`, `.jpg`
+1. **Pixelbasiert (Rastergrafiken)**
+   - Auflösungsabhängig
+   - Formate: `.png`, `.jpg`
 
-2. **Vector-Based**
-   - Scalable without loss of quality
-   - Formats: `.pdf`, `.svg`
+2. **Vektorbasiert**
+   - Skalierbar ohne Qualitätsverlust
+   - Formate: `.pdf`, `.svg`
 
-| Type        | Example Format | Use Case          |
+| Typ         | Beispielformat | Anwendungsfall         |
 |-------------|----------------|------------------------|
-| Pixel-Based | `.jpg`, `.png` | Photos, screenshots   |
-| Vector-Based| `.svg`, `.pdf` | Diagrams, illustrations|
+| Pixelbasiert| `.jpg`, `.png` | Fotos, Screenshots     |
+| Vektorbasiert| `.svg`, `.pdf`| Diagramme, Illustrationen|
 
 ---
 
-# Example: Pixel vs. Vector Graphics
+# Beispiel: Pixel- vs. Vektorgrafiken
 
-![Low-Res Image](img/low-res-example.jpg)  
-*Low-resolution pixel image*
+![Niedrig aufgelöstes Bild](img/low-res-example.jpg)  
+*Niedrig aufgelöstes Pixelbild*
 
-![High-Res Image](img/high-res-example.jpg)  
-*High-resolution pixel image*
+![Hochauflösendes Bild](img/high-res-example.jpg)  
+*Hochauflösendes Pixelbild*
 
-![Vector Image](img/vector-example.svg)  
-*Sharp and scalable vector image*
+![Vektorbild](img/vector-example.svg)  
+*Scharfes und skalierbares Vektorbild*
 
 ---
 
 class: part-slide
 count: false
 
-# Customizing Image Placement
+# Anpassung der Bildplatzierung
 
 ---
 
-# Wrapping Images in a `figure`
+# Bilder in eine `figure`-Umgebung einbetten
 
 ```latex
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.8\linewidth]{image.ext}
-    \caption{An example image.}
-    \label{fig:example}
+    \includegraphics[width=0.8\linewidth]{bild.ext}
+    \caption{Ein Beispielbild.}
+    \label{fig:beispiel}
 \end{figure}
 ```
 
-- Standard way of image handling in scientific works
-- Use `[h]`, `[t]`, `[b]`, `[p]`, or `!` for placement.
-- Add captions and labels for cross-referencing.
+- Standardmethode zur Handhabung von Bildern in wissenschaftlichen Arbeiten
+- Verwenden Sie `[h]`, `[t]`, `[b]`, `[p]` oder `!` für die Platzierung.
+- Fügen Sie Bildunterschriften und Labels für Querverweise hinzu.
 
 ---
 
-# Creating a List of Figures in LaTeX
+# Erstellen eines Abbildungsverzeichnisses in LaTeX
 
 ```latex
 \documentclass{report}
@@ -161,87 +161,87 @@ count: false
    \begin{document}
    \tableofcontents
    \listoffigures
-   \chapter{Introduction}
+   \chapter{Einleitung}
    \begin{figure}[h]
        \centering
-       \includegraphics[width=\linewidth]{image.ext}
-       \caption{An example figure.}
+       \includegraphics[width=\linewidth]{bild.ext}
+       \caption{Eine Beispielabbildung.}
    \end{figure}
    \end{document}
 ``` 
 
-- Overview of all figures in the document
-- Usually after table of contents
+- Übersicht aller Abbildungen im Dokument
+- Meistens nach dem Inhaltsverzeichnis platziert
 
 ---
 
-# Wrapping figures text
+# Textumflossene Bilder
 
 ```latex
 \usepackage{wrapfig}
 \begin{wrapfigure}{r}{0.4\textwidth}
 \centering
-\includegraphics[width=\linewidth]{image.ext}
-\caption{An example image.}
+\includegraphics[width=\linewidth]{bild.ext}
+\caption{Ein Beispielbild.}
 \label{fig:wrap}
 \end{wrapfigure}
 \blindtext
 ```
 
-- Creates visually appealing layouts.
-- Saves space in documents.
-- Commonly used in theses, reports, and articles.
+- Erstellt visuell ansprechende Layouts.
+- Spart Platz in Dokumenten.
+- Häufig verwendet in Abschlussarbeiten, Berichten und Artikeln.
 
 ---
 
-# Combining Multiple Images
+# Kombinieren mehrerer Bilder
 
 ```latex
 \usepackage{subcaption}
 \begin{figure}[h]
     \begin{subfigure}[b]{0.45\linewidth}
-        \includegraphics[width=\linewidth]{image1.ext}
-        \caption{Image 1}
+        \includegraphics[width=\linewidth]{bild1.ext}
+        \caption{Bild 1}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\linewidth}
-        \includegraphics[width=\linewidth]{image2.ext}
-        \caption{Image 2}
+        \includegraphics[width=\linewidth]{bild2.ext}
+        \caption{Bild 2}
     \end{subfigure}
 \end{figure}
 ```
 
-- Best-practice solution for combining multiple images in a single figure
-- Automatic sub indexing, use separate labels.
+- Best-Practice-Lösung zum Kombinieren mehrerer Bilder in einer einzigen Abbildung
+- Automatische Unterindizierung; verwenden Sie separate Labels.
 
 ---
 
 class: part-slide
 count: false
 
-# Generating Images with TikZ
+# Bilder generieren mit TikZ
 
 ---
 
-# What is TikZ?
+# Was ist TikZ?
 
-- A LaTeX library for drawing vector graphics.
-- Common applications:
-  - Diagrams
-  - Geometric shapes
-  - Flowcharts
-- R speaks TikZ (via `TikZDevice`)!
+- Eine LaTeX-Bibliothek zum Zeichnen von Vektorgrafiken.
+- Häufige Anwendungen:
+  - Diagramme
+  - Geometrische Formen
+  - Flussdiagramme
+- R spricht TikZ (via `TikZDevice`)!
 ```R
 tikz('tikz-example.tex',
 width = 3.25, height = 3.25)
-plot(1, 1, main = 'Hello \\TeX !')
+plot(1, 1, main = 'Hallo \\TeX !')
 dev.off()
 ```
-- ChatGPT speaks TikZ!
+- LLMs sprechen TikZ!
 
 ---
 
-## Example: Drawing with TikZ
+## Beispiel: Zeichnen mit TikZ
 
 ```latex
 \usepackage{tikz}
@@ -251,15 +251,15 @@ dev.off()
 \end{tikzpicture}
 ```
 
-*Generates this graphic:*
+*Erzeugt diese Grafik:*
 
-![TikZ Example](img/vector-example.svg)
+![TikZ Beispiel](img/vector-example.svg)
 
 ---
 
 class: part-slide
 
-# Many thanks for your attention!
+# Vielen Dank für Ihre Aufmerksamkeit!
 
 <center>
 <a href="https://wrznr.github.io/latex-module-images/">wrznr.github.io/latex-module-images</a>
