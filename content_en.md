@@ -6,7 +6,7 @@ layout: true
   <table>
     <tr>
       <td style="text-align:right">Sächsische Landesbibliothek – Staats- und Universitätsbibliothek</td>
-      <td>13th July 2026</td>
+      <td>2nd November 2026</td>
       <td style="text-align:right"><a href="https://www.slub-dresden.de/">www.slub-dresden.de</a></td>
     </tr>
     <tr>
@@ -25,7 +25,7 @@ layout: true
       <td style="text-align:left">Referat 4.3</td>
     </tr>
     <tr>
-      <td style="font-size:8pt"><b>13th July 26</b></td>
+      <td style="font-size:8pt"><b>2nd November 26</b></td>
     </tr>
     <tr>
       <td style="font-size:8pt">Latex Module: Images</td>
